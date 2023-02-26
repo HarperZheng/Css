@@ -18,6 +18,15 @@
     </div>
     <div class="first-wrapper">
         <div class="first-title">拼图编程</div>
+        <div class="under-first-title">让python成为你的新游戏</div>
+        <div class="oval-group">
+            <div class="shadow-oval"></div>
+            <div class="shadow-oval"></div>
+            <div class="shadow-oval"></div>
+            <div class="shadow-oval"></div>
+        </div>
+        <button class="start-now">现在开始</button>
+
     </div>
     <div class="second-wrapper">
         <div class="first-slogan">
@@ -29,9 +38,43 @@
         <div class="rounded-rectangle">first</div>
         <div class="rounded-rectangle">second</div>
         <div class="rounded-rectangle">third</div>
-
     </div>
-
+    <div class="third-wrapper"></div>
+    <div class="forth-wrapper"></div>
+    <div class="foot">
+        <div class="foot-center">
+            <div class="copyright-left">PuzzleProgram
+                <p>拼图编程，致力于最好的少儿编程</p>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt>关于PuzzleProgram</dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">管理团队</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于PuzzleProgram</dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">管理团队</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于PuzzleProgram</dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">管理团队</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+            </div>
+        </div>
+        <hr style="width: 70%;" />
+    </div>
 </body>
 
 <style>
@@ -92,20 +135,60 @@
         letter-spacing: 16px;
         font-weight: 900;
         margin: auto;
-        margin-top: 180px;
+        margin-top: 140px;
+    }
+
+    .under-first-title {
+        font-size: 40px;
+        font-family: "微软雅黑", "宋体", "黑体", Arial;
+        letter-spacing: 3px;
+        font-weight: 200;
+        margin: 0 auto;
+    }
+
+    .oval-group {
+        width: 45%;
+        margin: 24px auto;
+        padding: 10px;
+        /* 清除浮动 */
+        overflow: hidden;
+    }
+
+    .shadow-oval {
+        float: left;
+        margin: 0px 44px;
+        background-color: #FAF7F7;
+        width: 37%;
+        height: 46px;
+        border-radius: 20px;
+        box-shadow: 3px 10px 6px -4px rgb(0, 0, 0, .3);
+        margin-top: 35px;
+    }
+
+    .start-now {
+        border-radius: 20px;
+        height: 46px;
+        width: 110px;
+        margin: 1% auto;
+        background-color: #4C40F7;
+        color: #fff;
+        border: none;
+        font-size: 17px;
+        letter-spacing: 2px;
+        font-family: youyuan;
     }
 
     .second-wrapper {
-        height: 810px;
+        height: 600px;
         width: 65%;
         clear: both;
         margin-top: 20px;
         margin: 0 auto;
         text-align: center;
+        overflow: hidden;
     }
 
     .first-slogan {
-        margin-bottom: 40px;
         font-size: 23px;
     }
 
@@ -113,17 +196,99 @@
         margin-bottom: 90px;
         width: 70%;
         text-align: center;
-        margin: 50px auto 60px;
+        margin: 50px auto 70px;
     }
 
     .rounded-rectangle {
         width: 27%;
-        height: 30%;
+        height: 45%;
+        /* 多个块级元素纵向排列找标准流,多个块级元素横向排列找浮动 */
         float: left;
-        margin-left: 30px;
+        margin-left: 50px;
         border-radius: 20px;
-        border: 2px solid #EBEBEB;
         /* 边框粗细、样式、颜色 */
+        border: 2px solid #EBEBEB;
+
+    }
+
+    .rounded-rectangle:hover {
+        box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);
+    }
+
+    .third-wrapper {
+        background-image: url(03.png);
+        width: 100%;
+        height: 550px;
+        background-size: cover;
+        background-position: center 10px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .forth-wrapper {
+        background-image: url(04.png);
+        width: 90%;
+        height: 866px;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center 10px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .foot {
+        height: 315px;
+        background-color: #C7CDF0;
+        overflow: hidden;
+    }
+
+    .foot-center {
+        height: 200px;
+        width: 75%;
+        margin: 63px auto 10px;
+    }
+
+    .copyright-left {
+        float: left;
+        color: #3C227C;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    .copyright-left p {
+        font-size: 15px;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .links {
+        float: right;
+        width: 168x;
+    }
+
+    .links dl {
+        float: left;
+        margin-left: 100px;
+    }
+
+    .links dt {
+        font-size: 16px;
+        color: #646778;
+        margin-bottom: 6px;
+    }
+
+    .links dl dd {
+        margin-inline-start: 0;
+    }
+
+    .links dl dd a {
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+    }
+
+    .links dl dd a:hover {
+        color: #2945FF;
     }
 </style>
 
