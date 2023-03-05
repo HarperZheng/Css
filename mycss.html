@@ -39,8 +39,18 @@
         <div class="rounded-rectangle">second</div>
         <div class="rounded-rectangle">third</div>
     </div>
-    <div class="third-wrapper"></div>
-    <div class="forth-wrapper"></div>
+    <div class="third-wrapper">
+        <div class="rectangle"></div>
+        <img src="run.png" alt="">
+    </div>
+    <div class="forth-wrapper">
+        <div class="forth-slogan">
+            <h2>为什么使用拼图编程</h2>
+        </div>
+        <div class="square"></div>
+        <img src="bike.png" alt="">
+        <video src="Video.mp4" autoplay="autoplay" muted="muted" controls="controls"></video>
+    </div>
     <div class="foot">
         <div class="foot-center">
             <div class="copyright-left">PuzzleProgram
@@ -216,24 +226,60 @@
     }
 
     .third-wrapper {
-        background-image: url(03.png);
         width: 100%;
-        height: 550px;
-        background-size: cover;
-        background-position: center 10px;
-        text-align: center;
-        overflow: hidden;
+        height: 500px;
+        position: relative;
+    }
+
+    .rectangle {
+        width: 100%;
+        height: 55%;
+        position: absolute;
+        top: 22%;
+        background-color: #F5EDFF;
+        ;
+        border-radius: 15px
+    }
+
+    .third-wrapper img {
+        position: absolute;
+        height: 100%;
+        right: 10px;
     }
 
     .forth-wrapper {
-        background-image: url(04.png);
-        width: 90%;
-        height: 866px;
-        margin: 0 auto;
-        background-size: cover;
-        background-position: center 10px;
+        position: relative;
+        width: 100%;
+        height: 541px;
         text-align: center;
-        overflow: hidden;
+        margin-bottom: 60px;
+    }
+
+    .forth-wrapper h2 {
+        font-size: 37px;
+    }
+
+    .square {
+        width: 20%;
+        height: 74%;
+        position: absolute;
+        top: 22%;
+        left: 10%;
+        background-image: linear-gradient(117deg, #FFF0F0, #fff);
+        border-radius: 35px;
+    }
+
+    .forth-wrapper img {
+        position: absolute;
+        height: 74%;
+        left: -16px;
+        top: 106px;
+    }
+
+    .forth-wrapper video {
+        width: 56%;
+        position: absolute;
+        left: 25%;
     }
 
     .foot {
