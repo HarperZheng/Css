@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robot</title>
+</head>
+<body>
+    <div class="top-black"></div>
+    <img src="https://img.js.design/assets/img/623819ef51148d3f588944cd.png" class="robot">
+    <div class="chatbox">玩家你好！我是1号机器人PyOne，<br/>
+        我们一起开启Python之旅吧</div>
+    <div class="triangle"></div>
+</body>
+<style>
+    body {
+        position: relative;
+        margin: 0;
+        /*去除div和body之间的间隔*/
+        width: 100%;
+        height: 100%;
+    }
+    .top-black{
+        position: absolute;
+        background-color: #212226;
+        height: 300px;
+        width: 100%;
+    }
+    .robot{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        top: 125px;
+        left: 14%;
+    }
+    .chatbox {
+        position: absolute;
+        height: 240px;
+        width: 35%;
+        top: 174px;
+        left: 43%;
+        background-color: #5D5FEF;
+        border-radius: 12px;
+        box-shadow: 14px 10px 10px -4px rgb(0 0 0 / 30%);
+        text-align: center;
+        font-size: 31px;
+        color: white;
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-right: 50px solid #5D5FEF;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        left: 40%;
+        top: 215px;
+        }
+</style>
+</html>
